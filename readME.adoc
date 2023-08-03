@@ -46,9 +46,9 @@ the Arduino to column 17. I ran a jumper wire from 3 (PWM) on the Arduino to col
 This should close the circuit.
 
 .Thumbnail
-image:file:///home/jay/Arduino/practiceCode/PhotoresistorBuzzer/circuitLayout.png[
+image:https://github.com/TechRancher/PhotoresistorBuzzer/blob/main/circuitLayout.png[
 "KiCad Schematic",
-link="file:///home/jay/Arduino/practiceCode/PhotoresistorBuzzer/circuitLayout.png"]
+link="https://github.com/TechRancher/PhotoresistorBuzzer/blob/main/circuitLayout.png"]
 
 
 .Code
