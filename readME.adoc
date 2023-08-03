@@ -1,0 +1,71 @@
+== Working With Photoresistor And Buzzer
+
+:Project: Using a photoresistor to make music.
+:Author: Jason Sikes
+:AKA: TechRancher
+:Email: https://id.arduino.cc/sikesjay
+:Date: August 02, 2023
+:Revision: 1
+
+Title of this project is: {project}
+
+Author is {author}
+
+Also known as: {aka}
+
+Written on: {date}
+
+Version: {revision}
+
+.Description of the project
+We will read the value of the photoresistor, then have it take the value and run a buzzer with it.
+We are going to have to do some math to get the buzzer to play tones on the point slope. From a
+project we did with passive buzzers we learned that we can make good tones from 60 Microseconds to
+10000 Microseconds. So, we will plug this into our math slope line and come up with our formula to 
+use. (0,60) to (1023, 10000) we come up with y = [9940/1023] * x + 60. This is what we will plug
+into our code to take the light reading for our photoresistor and have the buzzer tone from the 
+results.
+
+.Items Needed
+* One 5k Ohm resistor
+* One Passive Buzzer
+* One Photoresistor
+* One Arduino R3 
+* One Breadboard
+* Six jumper wires
+
+.Circuit Design
+On the breadboard I installed one of the photoresistor's leg at column 15 (Note:
+the photoresistor has no polarity) and the leg to column 17. I installed the left 
+leg of the 5k ohm resistor into column 17 and the other into column 21. I installed
+the passive buzzer in column 29 and the other leg into column 26. Now to run the 
+jumper wires. I ran GND from the Arduino GND to the breadboard GND rail. I ran
+a jumper wire from 5V on the Arduino to column 15. I ran a jumper wire from A0 on
+the Arduino to column 17. I ran a jumper wire from 3 (PWM) on the Arduino to column
+29. I ran jumper wires from GND rail to column 21, and column 24. 
+This should close the circuit.
+
+.Thumbnail
+image:file:///home/jay/Arduino/practiceCode/PhotoresistorBuzzer/circuitLayout.png[
+"KiCad Schematic",
+link="file:///home/jay/Arduino/practiceCode/PhotoresistorBuzzer/circuitLayout.png"]
+
+
+.Code
+The code for this project is in the file called "PhotoresistorBuzzer.ino".
+
+.What To Expect
+Once the code is done and you upload to the Arduino, you are ready to hear the buzz tone
+that your shop light will produce. Take your finger and cover the photoresistor to help it
+change tones. Move your finger up and down (towards and away) from the photoresistor to 
+have a more musical tones. See if you can make it try and stay at one tone. 
+Have fun with it and make something!
+
+.Licensing Of Code
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+
+.Contact Me
+If you have any questions feel free to contact me at: {email}
