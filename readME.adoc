@@ -20,11 +20,12 @@ Version: {revision}
 .Description of the project
 We will read the value of the photoresistor, then have it take the value and run a buzzer with it.
 We are going to have to do some math to get the buzzer to play tones on the point slope. From a
-project we did with passive buzzers we learned that we can make good tones from 60 Microseconds to
-10000 Microseconds. So, we will plug this into our math slope line and come up with our formula to 
-use. (0,60) to (1023, 10000) we come up with y = [9940/1023] * x + 60. This is what we will plug
-into our code to take the light reading for our photoresistor and have the buzzer tone from the 
-results.
+project we did with passive buzzers we learned that we can make good tones from 0.8 Milliseconds to
+10 Milliseconds. And we know that our shop lighting had a reading on the photoresistor of 130
+when lights are low, and 750 when lights are bright. So, we will plug this into our math slope line
+and come up with our formula to use. (0.8,130) to (750, 10) we come up with 
+y = (9.2/620) * x -(9.2*130)/620 + 0.8. This is what we will plug into our code to take the light 
+reading for our photoresistor and have the buzzer tone from the results.
 
 .Items Needed
 * One 5k Ohm resistor
