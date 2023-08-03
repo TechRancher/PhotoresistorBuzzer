@@ -23,7 +23,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   photoVal = analogRead(photoPin);
-  buzzTone = 9940. / 1023. * photoVal + 60;
+  bbuzzTone = (9.2/620.)*photoVal-(9.2*130.)/620.+.8;
   analogWrite(buzzPin, buzzTone);
   Serial.print("PhotoVal");
   Serial.println(photoVal);
